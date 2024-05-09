@@ -54,7 +54,7 @@ was deployed. Vnet and Network interface are deployed but no other resources tha
 
 I also forgot to add the "osProfile" so I also filled that part of my bicep file.
 After various of errors, I successfully deployed the bicep file.
-![Deployment Succeeded](../media/az104-lab11-architecture.png)
+![Deployment Succeeded](./Media/Succeeded.png)
 
 + Task 5: Using loops in Bicep to deploy multiple VM instaces based on specific count.
 
@@ -65,7 +65,7 @@ In this task, I adjusted my main bicep file with the following parameters:
 
 After some time and a couple of errors, I managed to 
 deploy 3 virtual machines with all other resources.
-![Deployment Succeeded Portal](../media/az104-lab11-architecture.png)
+![Deployment Succeeded Portal](./Media/loop-vm-instance.png)
 
 + Task 6: Assigning a NSG (Network Security Group) and adding the
 necessary security rules applied.
@@ -94,7 +94,7 @@ resource nsg 'Microsoft.Network/networkSecurityGroups@2023-09-01' = {
   }
 }
 
-![Deployment Succeeded Portal - NSG](../media/az104-lab11-architecture.png)
+![Deployment Succeeded Portal - NSG](./Media/deployment-nsg.png)
 
 + Task 7: Creating separate parameter files for the bicep template, allowing
 for different environment deployments (dev, test, prod)
