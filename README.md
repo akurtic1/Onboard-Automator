@@ -37,7 +37,7 @@ In this task, I used CLI to log in into my Azure account and create the resource
 
 After this command, I checked if the resource is created successfully by typing the following commands: "az group list --output table"
 
-![Screenshot of this task](../media/az104-lab11-architecture.png)
+![Screenshot of this task](../Media/output-table.png)
 
 + Task 4: Building a Bicep File
 
