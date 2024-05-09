@@ -15,7 +15,7 @@ Implement an infrastructure-as-code approach to provision and manage virtual mac
 
 ## Important
 
-![My Bicep File](../media/az104-lab11-architecture.png)
+![My Bicep File]: https://github.com/akurtic1/Onboard-Automator/blob/c239bed969de09bab87244fbe69e929d3641bd2b/main.bicep
 
 ## Tasks - Step by Step
 
@@ -37,7 +37,7 @@ In this task, I used CLI to log in into my Azure account and create the resource
 
 After this command, I checked if the resource is created successfully by typing the following commands: "az group list --output table"
 
-![Screenshot of this task](../Media/output-table.png)
+![Screenshot of this task](./Media/output-table.png)
 
 + Task 4: Building a Bicep File
 
