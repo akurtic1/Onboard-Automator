@@ -11,6 +11,7 @@ Implement an infrastructure-as-code approach to provision and manage virtual mac
 + Azure Virtual Machines
 + Azure Resource Manager (ARM)
 + Bicep
++ Azure CLI
 
 ## Important
 
