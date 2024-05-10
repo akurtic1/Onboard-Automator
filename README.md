@@ -77,21 +77,21 @@ resource nsg 'Microsoft.Network/networkSecurityGroups@2023-09-01' = {
   location: location
   properties: {
     securityRules: [
-      {
-        |name: 'AllowSSH'|
-        |properties: {
-        |  protocol: 'Tcp'
-         | sourcePortRange: '*'
-         | destinationPortRange: '22'
-         | sourceAddressPrefix: '*'
-          destinationAddressPrefix: '*'
-          access: 'Allow'
-          direction: 'Inbound'
-          priority: 100
-        }
-      }
-    ]
-  }
+{
+name: 'AllowSSH'|
+properties: {
+protocol: 'Tcp'
+sourcePortRange: '*'
+destinationPortRange: '22'
+sourceAddressPrefix: '*'
+destinationAddressPrefix: '*'
+access: 'Allow'
+direction: 'Inbound'
+priority: 100
+}
+}
+]
+}
 }
 
 ![Deployment Succeeded Portal - NSG](./Media/deployment-nsg.png)
