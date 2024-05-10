@@ -72,6 +72,8 @@ necessary security rules applied.
 
 I added this code:
 ![Screenshot of NSG Code](./Media/nsg.png)
+
+Deployment in Azure Portal:
 ![Deployment Succeeded Portal - NSG](./Media/deployment-nsg.png)
 
 + Task 7: Creating separate parameter files for the bicep template, allowing
