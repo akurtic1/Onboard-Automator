@@ -78,12 +78,12 @@ resource nsg 'Microsoft.Network/networkSecurityGroups@2023-09-01' = {
   properties: {
     securityRules: [
       {
-        name: 'AllowSSH'
-        properties: {
-          protocol: 'Tcp'
-          sourcePortRange: '*'
-          destinationPortRange: '22'
-          sourceAddressPrefix: '*'
+        |name: 'AllowSSH'|
+        |properties: {
+        |  protocol: 'Tcp'
+         | sourcePortRange: '*'
+         | destinationPortRange: '22'
+         | sourceAddressPrefix: '*'
           destinationAddressPrefix: '*'
           access: 'Allow'
           direction: 'Inbound'
