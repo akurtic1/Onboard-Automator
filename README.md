@@ -71,29 +71,7 @@ deploy 3 virtual machines with all other resources.
 necessary security rules applied.
 
 I added this code:
-
-resource nsg 'Microsoft.Network/networkSecurityGroups@2023-09-01' = {
-  name: 'myNSG'
-  location: location
-  properties: {
-    securityRules: [
-{
-name: 'AllowSSH'|
-properties: {
-protocol: 'Tcp'
-sourcePortRange: '*'
-destinationPortRange: '22'
-sourceAddressPrefix: '*'
-destinationAddressPrefix: '*'
-access: 'Allow'
-direction: 'Inbound'
-priority: 100
-}
-}
-]
-}
-}
-
+![Screenshot of NSG Code](./Media/nsg.png)
 ![Deployment Succeeded Portal - NSG](./Media/deployment-nsg.png)
 
 + Task 7: Creating separate parameter files for the bicep template, allowing
@@ -102,8 +80,7 @@ for different environment deployments (dev, test, prod)
 In this task, I created a simple parameter files for the deployment with
 different environment configurations. Within this task, I learned the new command to deploy template with parameters: 
 
-+ az deployment group create --resource-group az-104 --template-file mai
-n.bicep --parameters @dev.parameters.json
+az deployment group create --resource-group az-104 --template-file main.bicep --parameters @dev.parameters.json
 
 + Task 8: Maintaining and Updates
 
